@@ -1,0 +1,26 @@
+.list {
+  list-style: none;
+}
+
+.item {
+  margin-bottom: 15px;
+  color: #e6d6d6;
+}
+.author {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: 500;
+  color: #fff;
+}
+
+.content {
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 5;
+  cursor: pointer;
+}
+
+.notice {
+  color: #ffd6d6;
+}

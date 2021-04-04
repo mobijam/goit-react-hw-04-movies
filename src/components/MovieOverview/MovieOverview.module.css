@@ -1,0 +1,89 @@
+.section {
+  padding: 40px 0;
+  background-color: #462c4feb;
+  color: #fff;
+  min-height: 100vh;
+}
+
+.mainInfo {
+  padding: 0 20px;
+  display: flex;
+}
+
+.imgWrapper {
+  margin-right: 30px;
+  width: 240px;
+  height: 360px;
+  border: 1px solid #bbb;
+  border-radius: 4px;
+}
+
+.poster {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.descr {
+  width: 50%;
+  padding: 10px 0;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 30px;
+  color: #ff545a;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+.subtitle {
+  color: #ffa5a8;
+}
+
+.filmData {
+  margin-bottom: 20px;
+}
+
+.filmOverview {
+  margin-bottom: 10px;
+}
+
+.addInfo {
+  margin: 10px 0;
+  padding: 10px 20px;
+  border-top: 2px solid #bbb;
+  border-bottom: 2px solid #bbb;
+}
+
+.filmInfo {
+  margin-bottom: 10px;
+  font-weight: 500;
+  letter-spacing: 0.05em;
+  color: #ffa5a8;
+}
+
+.linkList {
+  margin-left: 20px;
+  list-style: none;
+}
+
+.linkItem {
+  margin-bottom: 5px;
+  font-weight: 500;
+}
+
+.link {
+  color: inherit;
+  text-decoration: none;
+}
+
+.link:hover {
+  /* color: #ffd6d6; */
+  text-decoration: underline;
+}
+
+.activeLink {
+  color: tomato;
+}
