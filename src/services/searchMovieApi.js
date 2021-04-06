@@ -12,11 +12,9 @@ axios.defaults.params = {
 const getMovies = async (pathname, query) => {
   try {
     const { data } = await axios.get(pathname, { params: query });
-
     return data;
   } catch (error) {
-    console.log('error', { error });
-    return [];
+    return Promise.reject(new Error('Something go wrong, try again'));
   }
 };
 
