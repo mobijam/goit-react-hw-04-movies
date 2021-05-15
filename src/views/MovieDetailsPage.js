@@ -18,8 +18,6 @@ const Reviews = lazy(() =>
 export default class MovieDetailsPage extends Component {
   state = {
     movieDetails: null,
-    cast: null,
-    reviews: null,
   };
 
   componentDidMount() {
@@ -28,14 +26,6 @@ export default class MovieDetailsPage extends Component {
     movieAPI
       .getMovies(paths.getDetails(movieId))
       .then(data => this.setState({ movieDetails: data }));
-
-    movieAPI
-      .getMovies(paths.getCredits(movieId))
-      .then(data => this.setState({ cast: data.cast }));
-
-    movieAPI
-      .getMovies(paths.getReviews(movieId))
-      .then(data => this.setState({ reviews: data.results }));
   }
 
   handleGoBack = () => {
